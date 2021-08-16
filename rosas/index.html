@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<Title>Polar Rose</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	</head>
+
+	<body>
+		<center>
+			<br>
+			<H1> Hagamos curvas! </H1>
+			<p>
+				El siguiente dibujo es una función que se conoce como <strong>Rosas Polares</strong>. 
+			<br>
+				Prueba cambiando los valores y verás las distintas formas que toma. 
+			</p>		
+		
+			<canvas id="dibujito" width="400" height="400" ></canvas>
+			
+			<br>
+			
+			<p>así queda el dibujo.</p>
+			<table>
+				<tr>
+					<td> 
+						<center> <p>Valor de B</p> </center>
+						<center><h2 id="textoB">0</h2></center> 
+						<input type="range" id="rangeB" value="10" min="10" max="180" step="1">   
+					</td>
+					<td> 
+						<center> <p>Valor de K</p> </center>
+						<center><h2 id="textoK">0</h2></center> 
+						<input type="range" id="rangeK" value="1" min="0.1" max="10" step="0.1">   
+					</td>
+				</tr>
+			</table>
+			
+
+			
+		</center>
+
+		<script src="scripts.js"></script>
+
+	</body>
+
+</html>
