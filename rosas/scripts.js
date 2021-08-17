@@ -92,7 +92,7 @@ function makeDraw (b,k) {
 				
 				j += 0.01;
 	
-				dibujarLinea ("#00A", x1, y1);
+				dibujarLinea ("#0D6EFD", x1, y1);
 				
 		}
 
