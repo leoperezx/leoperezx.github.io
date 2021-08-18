@@ -3,6 +3,10 @@
 }
 
 .ancho-tabla {
-    width: 600px;
+    /* width: 600px; */
     margin: auto;
+}
+
+.alto_boton {
+    height: 200px;
 }
