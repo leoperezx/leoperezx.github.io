@@ -1,12 +1,8 @@
-.centrar {
-    margin: auto;
-}
-
-.ancho-tabla {
-    /* width: 600px; */
-    margin: auto;
-}
 
 .alto_boton {
     height: 200px;
+}
+
+.container {
+    width: 50%;
 }
