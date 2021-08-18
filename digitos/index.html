@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Cuenta Dígitos</title>
+    <script>
+        function presion() {
+            numero = prompt("ingrese un número");
+
+            var valoresAceptados=/^[0-9]*(\.?)[0-9]+$/;
+            var tienePunto=/\./;
+
+            if (numero.match(valoresAceptados)){
+                
+                if (numero.match(tienePunto)){
+                    letras = (numero.toString().length) - 1;
+                    document.querySelector("#boton").innerHTML="El " + numero + " tiene " + letras + " digitos.";
+                }else{
+                    letras = numero.toString().length;
+                    document.querySelector("#boton").innerHTML="El " + numero + " tiene " + letras + " digitos.";
+                }
+
+            }else{
+                document.querySelector("#boton").innerHTML="Lo que ingresaste no es un número";
+            }cifras
+            
+        }
+    </script>
+
+    <style type="text/css">
+        p {font-size:20px; line-height:2em;}
+        div.pos {width:50%; text-align:center;}
+        div.pos-volver {width:100%; text-align:center;}
+        div#abs {position:absolute; bottom:100px;left:25%;}
+        div#footer {position: absolute; bottom: 30px; margin: auto;}
+
+        .button {
+            background-color: #4992FD;
+            border-radius: 4px;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            } 
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="abs" class="pos">
+            
+            <h1>Cuenta Dígitos</h1>
+            <p id="boton">Cuenta la cantidad de dígitos de un número que ingresas por el "prompt"</p>
+            <button type="button" class="button" onclick="presion()">Inicia</button>  
+        
+    </div>
+    
+    <div id="footer" class="pos-volver">
+        <p> 
+            <a class="centrar btn btn-outline-primary" href="https://leoperezx.github.io">Volver</a> </p> 
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
