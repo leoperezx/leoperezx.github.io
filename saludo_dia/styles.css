@@ -1,0 +1,46 @@
+/*
+Estilo de index.html "numeroDia"
+*/
+
+body {
+    
+    font-family:Helvetica,Futura,Arial,Verdana,sans-serif;
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+.hello{
+    font-size: 48pt;
+}
+.ventana{
+    margin-top: 50px;
+    height: 46px; /* cada 46 px de altura cambia de dia la imangen */
+    width: 250px;
+    border:2px solid rgb(4, 1, 0);    
+    overflow: hidden;
+
+}
+
+.ventana img {
+    position: relative;
+    margin-left: -3px;
+    display: block;
+}
+
+.today{
+    font-size: 18pt;
+}
+
+.morning {
+    background-color: rgb(46, 137, 255);
+}
+.afternoon {
+    background-color: rgb(1, 28, 233);
+}
+.night {
+    background-color: rgb(1, 22, 41);
+}
