@@ -1,0 +1,4 @@
+ 15078259      4 -rw-rw-r--   1 leo      leo          1911 ago 18 19:35 /home/leo/Documentos/Algoritmos/github/pagina/index.html
+ 15078448      4 -rwxrwxr-x   1 leo      leo           520 ago 18 21:16 /home/leo/Documentos/Algoritmos/github/pagina/git-update.sh
+ 15076082      4 -rw-rw-r--   1 leo      leo            36 ago 18 19:33 /home/leo/Documentos/Algoritmos/github/pagina/styles.css
+ 15077891      0 -rw-rw-r--   1 leo      leo             0 ago 18 21:17 /home/leo/Documentos/Algoritmos/github/pagina/last-change-files.txt
